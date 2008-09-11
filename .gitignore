@@ -1,4 +1,5 @@
 log/*.log
 db/*.sqlite3
 tmp/**/*
-vendor
+vendor/plugins
+vendor/rails
