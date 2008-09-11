@@ -1,0 +1,7 @@
+## Installation:
+
+* git clone git://github.com/joshmh/globalize2-demo.git
+* cd globalize2-demo
+* rake rails:freeze:edge
+* script/plugin install git://github.com/joshmh/globalize2.git
+* rake db:migrate
