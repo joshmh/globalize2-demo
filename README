@@ -5,3 +5,4 @@
 * rake rails:freeze:edge
 * script/plugin install git://github.com/joshmh/globalize2.git
 * rake db:migrate
+* rake db:fixtures:load FIXTURES_PATH=db/fixtures

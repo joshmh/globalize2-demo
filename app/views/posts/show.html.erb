@@ -1,13 +1,9 @@
 <p>
-  <b>Title:</b>
-  <%=h @post.title %>
+  <%= link_to 'Home', posts_path(:locale => I18n.locale) %> &middot;
+  <%= link_to 'Edit', edit_post_path(@post) %> &middot;
+  <%= link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete %>
 </p>
 
-<p>
-  <b>Text:</b>
-  <%=h @post.text %>
-</p>
+<h1><%= link_to @post.title, @post %></h1>
 
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path(:locale => I18n.locale) %>
+<p><%= simple_format auto_link(@post.text) %></p>

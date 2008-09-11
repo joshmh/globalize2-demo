@@ -1,0 +1,10 @@
+welcome-en:
+  post_id: 1
+  locale: en-US
+  title: Welcome to Globalize2!
+  text: "This demo application shows you how to use Globalize2, the successor of the wildly popular Rails I18n solution Globalize.\n\nGlobalize2 is compatible with and based on the new I18n API in Rails 2.2 (see http://rails-i18n.org). Compared to its first incarnation Globalize it is pretty slick and lightweight but implements all major features of Globalize such as ActiveRecord model translations.\n\nIt is designed in a much more modular way so you can pick whatever tools make sense to you and combine them with other Rails I18n solutions of your choice."
+welcome-de:
+  post_id: 1
+  locale: de-DE
+  title: Willkommen zu Globalize2!
+  text: "Diese Demo Anwendung zeigt wie Globalize2, der Nachfolger der sehr populären Rails I18n Lösung Globalize, verwendet werden kann.\n\nGlobalize2 ist kompatibel mit und basiert auf der neuen I18n API in Rails 2.2 (siehe http://rails-i18n.org). Verglichen mit der ersten Version Globalize ist Globalize2 recht schlank und leichtgewichtig, implementiert aber dennoch alle wichtigen Funktionen aus Globalize, wie beispielsweise ActiveRecord Model Übersetzungen.\n\n Es ist wesentlich modularer aufgebaut, so daß es möglich ist, nur diejenigen zu verwenden, die man braucht, und sie mit anderen Rails I18n Lösungen zu kombinieren."
