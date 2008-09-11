@@ -1,4 +1,6 @@
-<p><%= link_to 'New post', new_post_path(:locale => I18n.locale) %></p>
+<p><%= link_to t(:"resource.new"), new_post_path(:locale => I18n.locale) %></p>
 
-<%= render :partial => "post", :collection => @posts %>
-
+<% @posts.each do |post| %>
+  <h1><%= link_to post.title, post %></h1>
+  <p><%= simple_format auto_link(post.text) %></p>
+<% end %>

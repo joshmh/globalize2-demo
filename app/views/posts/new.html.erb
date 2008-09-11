@@ -13,8 +13,8 @@
     <%= f.text_area :text %>
   </p>
   <p>
-    <%= f.submit "Create" %>
+    <%= f.submit t(:"buttons.create") %>
   </p>
 <% end %>
 
-<%= link_to 'Back', posts_path(:locale => I18n.locale) %>
+<%= link_to t(:"navigation.home"), posts_path(:locale => I18n.locale) %>

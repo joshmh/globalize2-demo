@@ -34,6 +34,8 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    p posts_url
+    exit
     @post.destroy
     redirect_to(posts_url)
   end

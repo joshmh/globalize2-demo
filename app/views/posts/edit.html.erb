@@ -1,4 +1,4 @@
-<h1>Editing post</h1>
+<h1><%= t :"post.edit" %></h1>
 
 <% form_for(@post) do |f| %>
   <%= f.error_messages %>
@@ -12,9 +12,9 @@
     <%= f.text_area :text %>
   </p>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit t(:"buttons.update") %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path(:locale => I18n.locale) %>
+<%= link_to t(:"resource.show"), @post %> |
+<%= link_to t(:"navigation.home"), posts_path(:locale => I18n.locale) %>

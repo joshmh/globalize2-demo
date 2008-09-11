@@ -1,7 +1,7 @@
 <p>
-  <%= link_to 'Home', posts_path(:locale => I18n.locale) %> &middot;
-  <%= link_to 'Edit', edit_post_path(@post) %> &middot;
-  <%= link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete %>
+  <%= link_to t(:"navigation.home"), posts_path(:locale => I18n.locale) %> &middot;
+  <%= link_to t(:"resource.edit"), edit_post_path(@post) %> &middot;
+  <%= link_to t(:"resource.destroy"), @post, :confirm => t(:"post.destroy_confirm", :default => :"resource.destroy_confirm"), :method => :delete %>
 </p>
 
 <h1><%= link_to @post.title, @post %></h1>
