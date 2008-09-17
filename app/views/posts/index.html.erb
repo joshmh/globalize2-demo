@@ -1,4 +1,7 @@
-<p><%= link_to t(:"resource.new"), new_post_path(:locale => I18n.locale) %></p>
+<p>
+  <%= link_to t(:"resource.new"), new_post_path(:locale => I18n.locale) %>
+  <%= "(fallback to #{t(:"resource.new").locale.inspect})" if t(:"resource.new").fallback? %>
+</p>
 
 <% @posts.each do |post| %>
   <h1><%= link_to post.title, post %></h1>
