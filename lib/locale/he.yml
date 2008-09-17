@@ -1,0 +1,22 @@
+he:
+  bidi:
+    direction: right-to-left
+  navigation:
+    select_locale: בחר שפה
+    home: עמוד הבית
+  buttons:
+    create: שלח
+    update: עדכן
+  resource:
+    show: הצג
+    new: כתבה חדשה
+    edit: ערוך
+    destroy: מחק
+    destroy_confirm: אתה בטוח?
+  post:
+    new: כתבה חדשה
+    edit: ערוך כתבה
+    new_post: כתבה חדשה
+    title: כותרת
+    text: תוכן
+    

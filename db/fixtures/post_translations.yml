@@ -8,3 +8,8 @@ welcome-de:
   locale: de
   title: Willkommen zu Globalize2!
   text: "Diese Demo Anwendung zeigt wie Globalize2, der Nachfolger der sehr populären Rails I18n Lösung Globalize, verwendet werden kann.\n\nGlobalize2 ist kompatibel mit und basiert auf der neuen I18n API in Rails 2.2 (siehe http://rails-i18n.org). Verglichen mit der ersten Version Globalize ist Globalize2 recht schlank und leichtgewichtig, implementiert aber dennoch alle wichtigen Funktionen aus Globalize, wie beispielsweise ActiveRecord Model Übersetzungen.\n\n Es ist wesentlich modularer aufgebaut, so daß es möglich ist, nur diejenigen zu verwenden, die man braucht, und sie mit anderen Rails I18n Lösungen zu kombinieren."
+welcome-he:
+  post_id: 1
+  locale: he
+  title: ברוכים הבאים לגלובאלייז2!
+  text: "הדגמה זו תדריך אותך בשימוש של גלובאלייז2, שממשיכה את דרכה של הגלובאלייז המקורית, הפתרון הפופולרית בטירוף לתרגום ריילז.\n\nגלובאלייז2 תואמת לממשק ה-I18n החדש בריילז 2.2 (ראה http://rails-i18n.org). בהשוואה לגלגולה הראשון, גלובאלייז2 היא קלילה ומטופחת, ועדיין מממשת את כל הפיצרים של הגלובאלייז המקורית, כגון תרגום מודלים של ActiveRecord.\n\nהיא מתוכננת בצורה מודולרית יותר, כך שתוכל לבחור אילו כלים מתאימים לצרכים שלך ותוכל לחבר אותם לפתרונות אחרים לריילז."

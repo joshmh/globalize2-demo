@@ -2,3 +2,7 @@ en:
   post:
     new: New Article
     edit: Edit Article
+    new_post: New Post
+    title: Title
+    text: Text
+    

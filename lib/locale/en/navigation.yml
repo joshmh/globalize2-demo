@@ -3,8 +3,8 @@ en:
     select_locale: Select locale
     home: Home
   buttons:
-    create: Speichern
-    update: Speichern
+    create: Create
+    update: Update
   resource:
     show: Show
     new: New
