@@ -1,0 +1,15 @@
+@import url(tripoli.base.css); 
+@import url(plugins/tripoli.visual.css); 
+@import url(plugins/tripoli.type.css);
+
+body {
+  border-top: 2px solid #eee;
+}
+
+div.content {
+  margin: 2em 5em; 
+  font-size: 12px; 
+}
+
+a { text-decoration: none; }
+p { width: 40em; }

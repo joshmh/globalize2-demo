@@ -5,20 +5,22 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title><%= t :"page.title" %> - <%= controller.controller_name %>: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'styles' %>
+  <!--[if IE]> <%= stylesheet_link_tag 'styles.ie.css' %><![endif]--> 
+
 </head>
-<body dir="<%= text_direction %>">
-
-<p>
-  <%= t :"navigation.select_locale" %>
-  <%= link_to 'en', url_for(:locale => 'en') %> &middot;
-  <%= link_to 'he', url_for(:locale => 'he') %> &middot;
-  <%= link_to 'de', url_for(:locale => 'de') %>
-</p>
-
-<p style="color: green"><%= flash[:notice] %></p>
-
-<%= yield  %>
-
+<body dir="<%= text_direction %>" class="content">
+  <div class="content">
+    <p>
+      <%= t :"navigation.select_locale" %>
+      <%= link_to 'en', url_for(:locale => 'en') %> &middot;
+      <%= link_to 'he', url_for(:locale => 'he') %> &middot;
+      <%= link_to 'de', url_for(:locale => 'de') %>
+    </p>
+    
+    <p style="color: green"><%= flash[:notice] %></p>
+    
+    <%= yield  %>
+  </div>  
 </body>
 </html>
