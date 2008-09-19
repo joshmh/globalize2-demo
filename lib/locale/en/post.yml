@@ -1,8 +1,7 @@
 en:
   post:
-    new: New Article
-    edit: Edit Article
-    new_post: New Post
+    new: New Post
+    edit: Edit Post
     title: Title
     text: Text
     

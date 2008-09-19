@@ -11,6 +11,8 @@ de:
     edit: Bearbeiten
     destroy: Löschen
   post:
-    new: Neuer Artikel
-    edit: Artikel bearbeiten
-    destroy_confirm: Den Artikel wirklich löschen?
+    new: Neuer Eintrag
+    edit: Eintrag bearbeiten
+    destroy_confirm: Den Eintrag wirklich löschen?
+    title: Titel
+    text: Text

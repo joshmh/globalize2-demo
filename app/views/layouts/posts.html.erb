@@ -1,12 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title><%= t :"page.title" %> - <%= controller.controller_name %>: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'styles' %>
-  <!--[if IE]> <%= stylesheet_link_tag 'styles.ie.css' %><![endif]--> 
+  <!--[if IE]> <%= stylesheet_link_tag 'styles.ie.css' %><![endif]-->
 
 </head>
 <body dir="<%= text_direction %>" class="content">
@@ -17,10 +15,8 @@
       <%= link_to 'he', url_for(:locale => 'he') %> &middot;
       <%= link_to 'de', url_for(:locale => 'de') %>
     </p>
-    
     <p style="color: green"><%= flash[:notice] %></p>
-    
     <%= yield  %>
-  </div>  
+  </div>
 </body>
 </html>
