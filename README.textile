@@ -4,7 +4,7 @@ h1. Installation:
 git clone git://github.com/joshmh/globalize2-demo.git
 cd globalize2-demo
 rake rails:freeze:edge
-script/plugin install git://github.com/joshmh/globalize2.git
+script/plugin install -r 'tag 0.1.0_PR1' git://github.com/joshmh/globalize2.git
 rake db:migrate
 rake db:fixtures:load FIXTURES_PATH=db/fixtures
 </code></pre>
