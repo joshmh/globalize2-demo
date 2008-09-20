@@ -8,3 +8,10 @@ script/plugin install -r 'tag 0.1.0_PR1' git://github.com/joshmh/globalize2.git
 rake db:migrate
 rake db:fixtures:load FIXTURES_PATH=db/fixtures
 </code></pre>
+
+To play with the "routing_filter":http://github.com/svenfuchs/routing-filter plugin check out the branch <code>routing-filter</code> and install the plugin:
+
+<pre><code>
+git checkout -b routing-filter origin/routing-filter
+script/plugin install git://github.com/svenfuchs/routing-filter.git
+</code></pre>
