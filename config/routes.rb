@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.filter :locale
+  
   map.root :controller => "posts"
   map.resources :posts
 
