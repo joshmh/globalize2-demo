@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
       I18n.locale = params[:locale] || :en
     end
 
-    def default_url_options(options)
+    def default_url_options(options = nil)
       {:locale => I18n.locale}
     end
 end
