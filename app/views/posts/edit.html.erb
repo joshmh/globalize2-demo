@@ -1,3 +1,9 @@
+<p>
+  <%= link_to t(:"navigation.home"), posts_path %> &middot;
+  <%= link_to t(:"resource.show"), @post %> &middot;
+  <%= link_to t(:"resource.destroy"), @post, :confirm => t(:"post.destroy_confirm", :default => :"resource.destroy_confirm"), :method => :delete %>
+</p>
+
 <h1><%= t :"post.edit" %></h1>
 
 <% form_for(@post) do |f| %>
@@ -15,6 +21,3 @@
     <%= f.submit t(:"buttons.update") %>
   </p>
 <% end %>
-
-<%= link_to t(:"resource.show"), @post %> |
-<%= link_to t(:"navigation.home"), posts_path(:locale => I18n.locale) %>

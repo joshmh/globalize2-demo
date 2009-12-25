@@ -7,6 +7,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @available_locales = @post.available_locales
   end
 
   def new
@@ -34,8 +35,6 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    p posts_url
-    exit
     @post.destroy
     redirect_to(posts_url)
   end
@@ -43,7 +42,7 @@ class PostsController < ApplicationController
   protected
 
     def set_posts
-      @posts = Post.find(:all)
+      @posts = Post.with_translations(I18n.locale)
     end
 
     def set_post

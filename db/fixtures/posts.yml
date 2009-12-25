@@ -1,2 +1,8 @@
 welcome:
   id: 1
+installation:
+  id: 2
+design:
+  id: 3
+usage:
+  id: 4

@@ -2,14 +2,50 @@ welcome-en:
   post_id: 1
   locale: en
   title: Welcome to Globalize2!
-  text: "This demo application shows you how to use Globalize2, the successor of the wildly popular Rails I18n solution Globalize.\n\nGlobalize2 is compatible with and based on the new I18n API in Rails 2.2 (see http://rails-i18n.org). Compared to its first incarnation Globalize it is pretty slick and lightweight but implements all major features of Globalize such as ActiveRecord model translations.\n\nIt is designed in a much more modular way so you can pick whatever tools make sense to you and combine them with other Rails I18n solutions of your choice."
+  text: |
+    This demo application shows you the basics of using Globalize2.
+    Globalize2, the successor of the wildly popular Rails I18n solution Globalize, is compatibe with the I18n Gem shipped in Rails > 2.2.
+    The first Version of Globalize2 included a number of features that had not made it into the I18n Gem yet, such as Locale Fallbacks and extensible Pluralization rules. For that reason Globalize2 0.1.0 shipped with an own Backend which replaced the Simple backend in I18n and added these features.
+    In the meanwhile these Features have been moved to I18n as optional features so that Globalize2 versions starting from 0.2.0 only implement Model Translations - which is the core feature that Globalize always has been so popular for. For that Globalize2 almost only builds on ActiveRecord core features which keeps it extensible and compatible in future.
 welcome-de:
   post_id: 1
   locale: de
   title: Willkommen zu Globalize2!
-  text: "Diese Demo Anwendung zeigt wie Globalize2, der Nachfolger der sehr populären Rails I18n Lösung Globalize, verwendet werden kann.\n\nGlobalize2 ist kompatibel mit und basiert auf der neuen I18n API in Rails 2.2 (siehe http://rails-i18n.org). Verglichen mit der ersten Version Globalize ist Globalize2 recht schlank und leichtgewichtig, implementiert aber dennoch alle wichtigen Funktionen aus Globalize, wie beispielsweise ActiveRecord Model Übersetzungen.\n\n Es ist wesentlich modularer aufgebaut, so daß es möglich ist, nur diejenigen zu verwenden, die man braucht, und sie mit anderen Rails I18n Lösungen zu kombinieren."
+  text: |
+    Diese Demo Anwendung zeigt, wie Globalize2 eingesetzt werden kann.
+    Globalize2, der Nachfolger der sehr populären Rails I18n Lösung Globalize, ist kompatibel mit der I18n Gem, das in Rails > 2.2 mitgeliefert wird.
+    Die erste Version von Globalize2 umfaßte eine Reihe von Features, die damals noch nicht im I18n Gem enthalten waren, wie z.B. Locale Fallbacks und erweiterbare Pluralisierungsregeln. Aus diesem Grund kam Globalize2 0.1.0 mit einem eigenen Backend, das das Simple Backend in I18n ersetzte und um diese Features ergänzte.
+    In der Zwischenzeit wurden diese Features als optionale Module ins I18n Gem integriert, so daß Globalize2 Versionen ab 0.2.0 ausschließlich Model Translations implementieren - das Hauptfeature, für das Globalize immer schon beliebt war. Globalize2 verwendet dazu fast ausschließlich ActiveRecord "Bordmittel", so daß es leicht erweiterbar und zukünftig kompatibel ist.
 welcome-he:
   post_id: 1
   locale: he
   title: ברוכים הבאים לגלובאלייז2!
   text: "הדגמה זו תדריך אותך בשימוש של גלובאלייז2, שממשיכה את דרכה של הגלובאלייז המקורית, הפתרון הפופולרית בטירוף לתרגום ריילז.\n\nגלובאלייז2 תואמת לממשק ה-I18n החדש בריילז 2.2 (ראה http://rails-i18n.org). בהשוואה לגלגולה הראשון, גלובאלייז2 היא קלילה ומטופחת, ועדיין מממשת את כל הפיצרים של הגלובאלייז המקורית, כגון תרגום מודלים של ActiveRecord.\n\nהיא מתוכננת בצורה מודולרית יותר, כך שתוכל לבחור אילו כלים מתאימים לצרכים שלך ותוכל לחבר אותם לפתרונות אחרים לריילז."
+
+installation-en:
+  post_id: 2
+  locale: en
+  title: Installing Globalize2
+  text: |
+    Installing Globalize2 is easy. Just install it as a plugin:
+      script/plugin install git://github.com/joshmh/globalize2.git
+    Globalize2 comes with a named scope #with_translations. This scopes your finder calls to records that have all fields translated that are specified with validates_presence_of. (See Post model and PostsController index action for an example.) For this scope to work you need to have the validation_reflection plugin installed:
+      script/plugin install git://github.com/redinger/validation_reflection.git
+
+design-en:
+  post_id: 3
+  locale: en
+  title: How Globalize2 works
+  text: |
+    Globalize2 adds the #translates scope to your ActiveRecord models:
+      class Post
+        translates :title, :text
+      end
+    This call dynamically creates a Post::Translation class which is a regular ActiveRecord model itself and represents the translated attributes of the Post model. That means the Post model will save one Translation record for each locale.
+
+usage-en:
+  post_id: 4
+  locale: en
+  title: How to use
+  text: |
+    Once your application is setup for I18n you can start using Model translations.

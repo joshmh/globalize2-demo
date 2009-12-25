@@ -1,9 +1,15 @@
 <p>
-  <%= link_to t(:"navigation.home"), posts_path(:locale => I18n.locale) %> &middot;
+  <%= link_to t(:"navigation.home"), posts_path %> &middot;
   <%= link_to t(:"resource.edit"), edit_post_path(@post) %> &middot;
   <%= link_to t(:"resource.destroy"), @post, :confirm => t(:"post.destroy_confirm", :default => :"resource.destroy_confirm"), :method => :delete %>
 </p>
 
-<h1><%= link_to @post.title, @post %></h1>
+<% if(@post.valid?) %>
+	<%= render 'post', :locals => { :post => @post } %>
+<% else %>
+	<p><%= t(:'post.incomplete_translation') %></p>
+<% end %>
 
-<%= simple_format auto_link(@post.text) %>
+<p>
+	<%= t(:'available_locales', :count => @available_locales.size, :links => @available_locales.map { |locale| link_to(locale, post_path(@post, :locale => locale)) }.join(', ')) %>
+</p>

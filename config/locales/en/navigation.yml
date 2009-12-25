@@ -1,6 +1,6 @@
 en:
   navigation:
-    select_locale: Select locale
+    select_locale: "Select locale: {{links}}"
     home: Home
   buttons:
     create: Create

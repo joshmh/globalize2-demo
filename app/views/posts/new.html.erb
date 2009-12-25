@@ -1,3 +1,7 @@
+<p>
+  <%= link_to t(:"navigation.home"), posts_path %>
+</p>
+
 <h1><%=t :'post.new' %></h1>
 
 <% form_for(@post) do |f| %>
@@ -16,5 +20,3 @@
     <%= f.submit t(:'buttons.create') %>
   </p>
 <% end %>
-
-<%= link_to t(:'navigation.home'), posts_path(:locale => I18n.locale) %>

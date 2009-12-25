@@ -1,0 +1,23 @@
+de:
+  navigation:
+    select_locale: "Sprache wählen: {{links}}"
+    home: Startseite
+  buttons:
+    create: Speichern
+    update: Speichern
+  resource:
+    show: Anzeigen
+    new: Neu
+    edit: Bearbeiten
+    destroy: Löschen
+  post:
+    new: Neuer Eintrag
+    edit: Eintrag bearbeiten
+    destroy_confirm: Den Eintrag wirklich löschen?
+    title: Titel
+    text: Text
+    incomplete_translation: "Die Übersetzung dieses Eintrags ist nicht vollständig." 
+  available_locales: 
+    zero: "Keine Übersetzungen verfügbar."
+    one: "Verfügbare Übersetzungen: {{links}}"
+    other: "Verfügbare Übersetzungen: {{links}}"    

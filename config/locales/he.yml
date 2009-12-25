@@ -2,7 +2,7 @@ he:
   bidi:
     direction: right-to-left
   navigation:
-    select_locale: בחר שפה
+    select_locale: "בחר שפה: {{links}}"
     home: עמוד הבית
   buttons:
     create: שלח

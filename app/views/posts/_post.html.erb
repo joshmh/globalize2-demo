@@ -1,0 +1,3 @@
+<h1><%= link_to post.title, post %></h1>
+
+<%= simple_format auto_link(post.text.gsub("\n", "\n\n")) %>

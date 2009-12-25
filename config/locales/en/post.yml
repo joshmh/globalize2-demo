@@ -1,0 +1,11 @@
+en:
+  post:
+    new: New Post
+    edit: Edit Post
+    title: Title
+    text: Text
+    incomplete_translation: "This post's translation is not complete." 
+  available_locales: 
+    zero: "No translations available."
+    one: "Available translations: {{links}}"
+    other: "Available translations: {{links}}"
